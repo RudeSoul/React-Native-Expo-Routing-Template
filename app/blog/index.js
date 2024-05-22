@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Button } from "react-native";
-import { useRouter } from "expo-router";
+import { Link, useRouter } from "expo-router";
 
 export default function Page() {
   const router = useRouter();
@@ -19,10 +19,14 @@ export default function Page() {
         onPress={() => router.push("/blog/3")}
         title="Go to Blog 3"
       ></Button>
-      <Button
-        onPress={() => router.push("/blog/4")}
-        title="Go to Blog 4"
-      ></Button>
+      <Link
+        href={{
+          pathname: "blog/4",
+          params: { author: "pra" },
+        }}
+      >
+        <Text>Go to Blog 4</Text>
+      </Link>
       <Button onPress={() => router.back()} title="Go Back"></Button>
     </View>
   );
