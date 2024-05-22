@@ -12,7 +12,7 @@ export default function Page() {
         title="Go to Blog 1"
       ></Button>
       <Button
-        onPress={() => router.push("/blog/2")}
+        onPress={() => router.push("/blog/2?author=jane")}
         title="Go to Blog 2"
       ></Button>
       <Button
