@@ -32,6 +32,7 @@ export default function _layout() {
         name="contact"
         options={{ headerTitle: "Contact", presentation: "modal" }}
       />
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
     </Stack>
   );
 }

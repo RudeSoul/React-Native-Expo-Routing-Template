@@ -15,6 +15,9 @@ export default function Page() {
       <Link href={"/contact"} asChild>
         <Button title="Go to Contact Page" />
       </Link>
+      <Link href={"(tabs)/feed"} asChild>
+        <Button title="Go to Tabs" />
+      </Link>
     </View>
   );
 }
